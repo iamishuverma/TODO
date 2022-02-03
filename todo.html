@@ -1,0 +1,43 @@
+<html>
+  <head>
+    <title>
+      Simple TODO List
+    </title>
+    <link rel = "stylesheet" href = "todo.css">
+    <script src="todo.js"></script>
+
+  </head>
+  
+  <body bgcolor = "#DCDCDC">
+    <div class = "todo">
+     <div class = "card"> 
+    
+    <p style = "margin-top: 35px"></p>
+    <label for = "task" class = "text"> What needs to be done?</label>
+    <input type = "text" id ="task" name = "task" placeholder = "Enter your task here" 
+            style = "font-size: 12pt; height: 40px; width:90%; margin-top: 15px">
+    <button type = "button" class = "button1" onclick = "onAddTask()">Add</button>
+      
+      <div class = "new_div1">
+        
+        <div class = "pill-nav">
+<!--          <a class = "Active" href="#all" id = "all" onclick = "onAll()">All</a>-->
+<!--          <a href = "#active" id = "active" onclick = "onActive()">Active</a>-->
+<!--          <a href = "#completed" id = "completed" onclick = "onCompleted()">Completed</a>-->
+          <a class = "Active" id = "all" onclick = "onAll()">All</a>
+          <a id = "active" onclick = "onActive()">Active</a>
+          <a id = "completed" onclick = "onCompleted()">Completed</a>
+        </div>
+        
+        <div class = "new_div2" id = "new_div2">
+          <p class = "remaining" id = "remaining">
+          </p>
+          
+          
+        </div>
+       </div> 
+      </div>
+      
+    </div>
+  </body>
+</html>

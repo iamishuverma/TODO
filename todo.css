@@ -1,0 +1,170 @@
+.todo {
+text-align: center;
+height: 100%;
+width: 100%;
+}
+
+div.card {
+    display: inline-block;
+    text-align: center;
+    width: 36%;
+    background-color: #FFFFFF;
+    box-shadow: 0px 5px 5px 5px #C0C0C0;
+}
+
+.button1 {
+    background-color: #000000; 
+    border: none;
+    color: white;
+    width: 90%;
+    height: 30px;
+    margin: 10px 0px 10px 0px;
+    padding: 5px 25px;
+    text-align: center;
+    font-size: 16px;
+    font-family: "sans-serif";
+    cursor: pointer;
+}
+
+.new_div1 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.pill-nav {
+  width: 80%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.pill-nav a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  border-style: solid;
+  border-color: pink;
+  border-width: 1px;
+  padding: 5px;
+  width: 28%;
+  font-size: 13px;
+  font-family: "sans-serif";
+}
+
+.pill-nav a:hover {
+    border-color: black;
+}
+
+.pill-nav a.Active {
+    border-color: black;
+    text-decoration: underline;
+}
+
+.new_div2 {
+    text-align: left;
+    margin-top: 5px;
+    display: inline-block;
+    width: 80%;
+}
+
+.remaining {
+    font-family: "sans-serif";
+    font-weight: bold;
+    color: maroon;
+}
+
+.new-task {
+    display: inline-block;
+    width: 100%;
+}
+
+.container {
+  position: relative;
+  font-family: "sans-serif";
+  padding-left: 37px;
+  padding-top: 8px;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 10px;
+}
+
+.container input {
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-style: solid;
+  border-width: 2px;
+  height: 25px;
+  width: 25px;
+  background-color: #FFFFFF;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 2px;
+  width: 5px;
+  height: 13px;
+  border: solid maroon;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.text {
+  font-family: "sans-serif";
+}
+
+.box {
+    height: 30px;
+    width: 30px;
+}
+
+.button_group {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 25px;
+}
+
+.edit_button {
+    background-color: #FFFFFF; 
+    border-color: maroon;
+    color: maroon;
+    width: 49%;
+    height: 25px;
+    text-align: center;
+    margin-right: 2px;
+    font-size: 12px;
+    font-family: "sans-serif";
+    cursor: pointer;
+}
+
+.delete_button {
+    background-color: maroon; 
+    border-color: maroon;
+    color: white;
+    width: 49%;
+    height: 25px;
+    text-align: center;
+    margin-left: 2px;
+    font-size: 12px;
+    font-family: "sans-serif";
+    cursor: pointer;
+}
+
